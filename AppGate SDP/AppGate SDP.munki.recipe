@@ -5,9 +5,9 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v1.1.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of AppGate SDP and imports it into Munki.</string>
+	<string>Downloads the latest version of the AppGate SDP client and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.datadoghq.munki.AppGateSDP</string>
+	<string>com.github.psaintemarie.munki.AppGateSDP</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
@@ -18,20 +18,14 @@
 		<dict>
 			<key>blocking_applications</key>
 			<array>
-				<string>AppGate SDP Helper.app</string>
-				<string>AppGate SDP Helper NP.app</string>
-				<string>AppGate SDP Helper EH.app</string>
 				<string>AppGate SDP.app</string>
-				<string>UpdateUI.app</string>
-				<string>CocoaDialog.app</string>
-				<string>AppGate Service.app</string>
 			</array>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string> </string>
+			<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
 			<key>developer</key>
 			<string>CYXTERA TECHNOLOGIES, INC.</string>
 			<key>display_name</key>
@@ -45,7 +39,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.datadoghq.download.AppGateSDP</string>
+	<string>com.github.psaintemarie.download.AppGateSDP</string>
 	<key>Process</key>
 	<array>
 		<dict>

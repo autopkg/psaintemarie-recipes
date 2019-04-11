@@ -5,9 +5,9 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v1.1.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of AppGate SDP.</string>
+	<string>Downloads the latest version of the AppGate SDP client.</string>
 	<key>Identifier</key>
-	<string>com.datadoghq.download.AppGateSDP</string>
+	<string>com.github.psaintemarie.download.AppGateSDP</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
