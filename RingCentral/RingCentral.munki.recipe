@@ -5,15 +5,15 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v1.2.1 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of RingCentral Glip and imports it into Munki.</string>
+	<string>Downloads the latest version of RingCentral (Glip) and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.psaintemarie.munki.Glip</string>
+	<string>com.github.psaintemarie.munki.RingCentral</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>Glip</string>
+		<string>RingCentral</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -21,11 +21,11 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Glip is instant messaging for teams and businesses to communicate and get work done at the same time. In Glip you work where your conversations are, so you always know what your team is doing and what needs to get done next.</string>
+			<string>RingCentral is instant messaging for teams and businesses to communicate and get work done at the same time. In RingCentral you work where your conversations are, so you always know what your team is doing and what needs to get done next.</string>
 			<key>developer</key>
 			<string>RingCentral, Inc.</string>
 			<key>display_name</key>
-			<string>Glip</string>
+			<string>RingCentral</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -35,7 +35,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.psaintemarie.download.Glip</string>
+	<string>com.github.psaintemarie.download.RingCentral</string>
 	<key>Process</key>
 	<array>
 		<dict>
