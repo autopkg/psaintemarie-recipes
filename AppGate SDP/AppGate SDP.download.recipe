@@ -11,7 +11,7 @@
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
-		<string>https://sdpdownloads.cyxtera.com/latest/macos/AppGate-SDP-client.dmg</string>
+		<string>https://bin.appgate-sdp.com/latest/macos/AppGate-SDP-client.dmg</string>
 		<key>NAME</key>
 		<string>AppGate SDP</string>
 	</dict>
