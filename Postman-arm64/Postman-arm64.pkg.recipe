@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release version of Postman for Apple Silicon and builds a package. (based on bnpl recipe for the Intel version)</string>
     <key>Identifier</key>
-    <string>com.github.psaintemarie.pkg.postman</string>
+    <string>com.github.psaintemarie.pkg.postman-arm64</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.2.8</string>
     <key>ParentRecipe</key>
-    <string>com.github.psaintemarie.download.postman</string>
+    <string>com.github.psaintemarie.download.postman-arm64</string>
     <key>Process</key>
     <array>
         <dict>
