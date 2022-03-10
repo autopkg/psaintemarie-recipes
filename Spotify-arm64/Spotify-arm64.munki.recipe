@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Spotify for Apple Silicon and imports into Munki.
+
+Note: 1.0.50 and 1.0.51 versions of Spotify has mode 744 for its executables,
+causing the app to not launch for any user except the user who installed
+it, root in the case of Munki. Currently a postinstall_script fixes this issue
+by adding group and owner +x to these files.
+
+Related GitHub issue:
+https://github.com/autopkg/recipes/issues/196
+</string>
+    <key>Identifier</key>
+    <string>com.github.psaintemarie.munki.Spotify-arm64</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Spotify-arm64</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>supported_architectures</key>
+            <array>
+                <string>arm64</string>
+            </array>
+            <key>description</key>
+            <string>Spotify is a music streaming service offering unlimited streaming of selected music from a range of major and independent record labels.</string>
+            <key>display_name</key>
+            <string>Spotify</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>postinstall_script</key>
+            <string>#!/bin/bash
+                # Add directory traversal for the entire application and ensure 
+                # all executables are executable by group and other
+                /bin/chmod -R go+rX /Applications/Spotify.app
+            </string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.psaintemarie.download.Spotify-arm64</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
