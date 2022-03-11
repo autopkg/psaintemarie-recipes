@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of Postman for Apple Silicon. (based on bnpl recipe for the Intel version)</string>
+    <string>Downloads the current release version of Postman for Apple Silicon. Taken from bnpl-recipes repo. thanks to TSPARR for the Code Signature Check</string>
     <key>Identifier</key>
     <string>com.github.psaintemarie.download.postman-arm64</string>
     <key>Input</key>
@@ -11,17 +11,15 @@
         <key>DOWNLOAD_URL</key>
         <string>https://dl.pstmn.io/download/latest/osx_arm64</string>
         <key>NAME</key>
-        <string>Postman-arm64</string>        
+        <string>Postman-arm64</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>Process</key>
     <array>
         <dict>
-  			<key>Arguments</key>
+            <key>Arguments</key>
             <dict>
-                <key>filename</key>
-                <string>%NAME%.zip</string>
                 <key>url</key>
                 <string>%DOWNLOAD_URL%</string>
             </dict>
@@ -37,6 +35,8 @@
             <string>Unarchiver</string>
             <key>Arguments</key>
             <dict>
+                <key>archive_format</key>
+                <string>zip</string>
                 <key>archive_path</key>
                 <string>%pathname%</string>
                 <key>destination_path</key>
