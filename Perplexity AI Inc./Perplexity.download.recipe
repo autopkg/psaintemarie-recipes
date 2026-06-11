@@ -5,7 +5,12 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.5.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Perplexity.</string>
+	<string>Downloads the latest version of Perplexity.
+
+The download server sits behind a Cloudflare JS challenge that blocks curl
+by TLS fingerprint, so this recipe uses the NSURLSessionDownloader processor
+(in this directory) instead of URLDownloader. It downloads through Apple's
+native network stack via osascript/JXA, which passes the challenge.</string>
 	<key>Identifier</key>
 	<string>com.github.psaintemarie.download.Perplexity</string>
 	<key>Input</key>
@@ -28,7 +33,7 @@
 				<string>%DOWNLOAD_URL%</string>
 			</dict>
 			<key>Processor</key>
-			<string>URLDownloader</string>
+			<string>NSURLSessionDownloader</string>
 		</dict>
 		<dict>
 			<key>Processor</key>
