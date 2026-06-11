@@ -2,32 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with Recipe Robot v1.1.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of CloudApp.</string>
+	<string>Downloads the latest version of Zight (formerly CloudApp).</string>
 	<key>Identifier</key>
-	<string>com.github.psaintemarie.download.CloudApp</string>
+	<string>com.github.psaintemarie.download.Zight</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
-		<string>https://s3.amazonaws.com/downloads.getcloudapp.com/mac/latest/CloudApp.pkg</string>
+		<string>https://downloads.zight.com/mac/latest/Zight.pkg</string>
 		<key>NAME</key>
-		<string>CloudApp</string>
+		<string>Zight</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.1.0</string>
+	<string>1.0.0</string>
 	<key>Process</key>
 	<array>
-        <dict>
-            <key>Processor</key>
-            <string>DeprecationWarning</string>
-            <key>Arguments</key>
-            <dict>
-                <key>warning_message</key>
-                <string>The CloudApp is now Zight, check the Zight recipe. This CloudApp recipe is deprecated and will be removed in the future.</string>
-            </dict>
-        </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -48,7 +37,7 @@
 			<dict>
 				<key>expected_authority_names</key>
 				<array>
-					<string>Developer ID Installer: Linebreak SL (DCMDDJEW9X)</string>
+					<string>Developer ID Installer: ZIGHT, INC (HTG69D3426)</string>
 					<string>Developer ID Certification Authority</string>
 					<string>Apple Root CA</string>
 				</array>
