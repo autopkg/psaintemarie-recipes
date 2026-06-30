@@ -13,7 +13,12 @@ autopkg repo-add psaintemarie-recipes
 ```
 ## Dependencies
 
-Some of my recipes (may) have parent recipes that live in another repo. Refer to a given recipe's parent recipe identifier to determine which repo you'll need to add. As of today, this is not the case.
+Some of my recipes have parent recipes that live in another repo:
+
+- `Codeium/Windsurf.munki.recipe` requires `com.github.almenscorner.download.Windsurf`, from [autopkg/almenscorner-recipes](https://github.com/autopkg/almenscorner-recipes).
+- `MicrosoftOneDrive/MicrosoftOneDriveUniversal.munki.recipe` requires `com.github.rtrouton.download.microsoftuniversalonedrive`, from [autopkg/rtrouton-recipes](https://github.com/autopkg/rtrouton-recipes).
+
+Add those repos (e.g. `autopkg repo-add rtrouton-recipes`) before running the recipes above. For any other recipe, refer to its `ParentRecipe` identifier to determine which repo, if any, you'll need.
 
 ## Known issues
 

@@ -21,7 +21,7 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string> </string>
+			<string>Audiate is speech-to-text transcription and editing software from TechSmith that lets you edit audio and video by editing the transcript text.</string>
 			<key>developer</key>
 			<string>TechSmith Corporation</string>
 			<key>display_name</key>

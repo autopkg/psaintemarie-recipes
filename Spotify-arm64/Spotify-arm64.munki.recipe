@@ -48,7 +48,7 @@ https://github.com/autopkg/recipes/issues/196
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>1.1</string>
     <key>ParentRecipe</key>
     <string>com.github.psaintemarie.download.Spotify-arm64</string>
     <key>Process</key>
